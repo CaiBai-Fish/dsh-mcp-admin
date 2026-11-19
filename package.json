@@ -1,0 +1,29 @@
+{
+  "name": "dsh-mcp-admin",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "description": "Settings page entry for @deepseek-ai/dsh-mcp-manager",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CaiBai-Fish/dsh-mcp-admin.git"
+  }
+}

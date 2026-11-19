@@ -1,0 +1,5 @@
+# dsh-mcp-admin 作为 bundle 的自注册条目。
+# profile 里只需在 package.json 的 dsh.profile.bundles 列出本包，patch 会自动插入。
+- insert:
+    - id: mcp-admin
+      name: dsh-mcp-admin
